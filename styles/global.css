@@ -31,3 +31,29 @@
   --border-hover: #b9c2d0;
 }
 html{ background-color: var(--background); }
+
+body{ 
+  display: flex;
+  flex-direction: column;
+  
+  max-width: 48rem;
+  margin-inline: auto;
+
+  padding: 2.125rem 2rem;
+}
+
+a{ 
+  text-decoration: none;
+  font: var(--link);
+  color: var(--color-brand);
+
+  transition: color 200ms ease-in;
+}
+a:hover{
+  color: var(--color-brand-hover);
+}
+
+h1{
+  font: var(--title);
+  color: var(--content-primary);
+}
