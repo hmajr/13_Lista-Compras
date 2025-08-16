@@ -1,14 +1,14 @@
 .shop-list-container{
   display: flex;
   flex-direction: column;
+}
 
-  & .new-item{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
-  }
+.new-item{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 .shop-list{
@@ -47,5 +47,15 @@
     left: 0;
     width: 85%;
     height: 100%;
+  }
+}
+
+@media screen and (width >= 55rem) {
+  .new-item{
+    flex-direction: row;
+    
+    & input[type="text"]{
+      flex: 1 1 auto;
+    }
   }
 }
