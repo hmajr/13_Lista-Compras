@@ -1,0 +1,51 @@
+.shop-list-container{
+  display: flex;
+  flex-direction: column;
+
+  & .new-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.shop-list{
+  width: 100%;
+  margin-bottom: 2.25rem;
+
+  & ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    
+  }
+}
+
+.shop-item{
+  position: relative;
+  display: flex;
+  gap: .75rem;
+  padding: 0.75rem;
+  align-items: baseline;
+  font: var(--paragraph);
+
+  border-radius: 12px;
+  background-color: var(--background-secondary);
+  & img{
+    width: 1rem;
+    height: 1rem;
+  }
+  & span{
+    flex: 1 1 auto;
+    color: var(--content-secondary);
+  }
+  & input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 100%;
+  }
+}
