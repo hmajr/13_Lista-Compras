@@ -4,6 +4,9 @@
 .mobile-only{
   display: block;
 }
+.display-none{
+  display: none;
+}
 
 @media screen and (width >= 48rem) {
   .desktop-only{
