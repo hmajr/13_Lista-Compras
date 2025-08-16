@@ -1,0 +1,15 @@
+.desktop-only{
+  display: none;
+}
+.mobile-only{
+  display: block;
+}
+
+@media screen and (width >= 48rem) {
+  .desktop-only{
+    display: block;
+  }
+  .mobile-only{
+    display: none;
+  }
+}
