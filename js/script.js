@@ -39,3 +39,28 @@ btnAdd.addEventListener('click', e => {
   input.value = ''
   input.focus()
 })
+
+function showDeleteWarning() {
+  const notificationContainer = document.querySelector('.notification-container')
+  const warningDiv = document.createElement('div')
+  warningDiv.classList.add('delete-warning')
+
+  const imgWarn = document.createElement('img')
+  imgWarn.src = './assets/icons/warning.svg'
+  imgWarn.alt = ''
+
+  const span = document.createElement('span')
+  span.textContent = 'O item foi removido da lista'
+
+  const imgClose = document.createElement('img')
+  imgClose.src = './assets/icons/cross-small.svg'
+  imgClose.alt = ''
+  imgClose.addEventListener('click', () => warningDiv.remove())
+
+  warningDiv.append(imgWarn, span, imgClose)
+  notificationContainer.appendChild(warningDiv)
+
+  setTimeout(() => {
+    if (warningDiv.parentNode) warningDiv.remove()
+  }, 2000)
+}
