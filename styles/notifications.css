@@ -1,0 +1,30 @@
+.notification-container{
+  display: flex;
+  align-items: center;
+  padding: .75rem;
+  gap: .5rem;
+
+  font: var(--label);
+  color: var(--always-white);
+  
+  border-style: none;
+  border-radius: 12px;
+  
+  & img{
+    width: 1.25rem;
+    height: 1.25rem;
+  
+    color: var(--always-white);
+    filter: invert(1);
+  }
+  
+  & span{
+    flex: 1 1 auto;
+  }
+}
+
+.delete-warning{
+  background-color: var(--color-danger);
+
+}
+
